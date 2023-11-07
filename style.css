@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: #222;
+  /* background-color: #60b347; */
+}
+
+.correct {
+  background-color: #60b347;
+}
+
+/* LAYOUT */
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid #eee;
+}
+
+main {
+  height: 65vh;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  width: 52rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  width: 52rem;
+  font-size: 2rem;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.between {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  margin-top: 1.5rem;
+}
+
+.again {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.guess {
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.message {
+  margin-bottom: 8rem;
+  height: 3rem;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
+
+.number-correct {
+  width: 30rem;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 10px) and (max-width: 281px) {
+  html {
+    font-size: 50%;
+    width: auto;
+  }
+  body {
+    width: 100%;
+  }
+  header {
+    display: inline-block;
+    height: 40rem;
+    width: 100%;
+  }
+  main {
+    height: 80rem;
+    flex-direction: column;
+    width: 100%;
+  }
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 70%;
+    padding-left: 2rem;
+  }
+
+  h1 {
+    width: 90%;
+    top: 56%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .again {
+    top: 2rem;
+    left: 25%;
+  }
+  .between {
+    top: 10rem;
+    right: 15%;
+  }
+}
+
+@media (min-width: 282px) and (max-width: 410px) {
+  html {
+    font-size: 50%;
+    width: auto;
+  }
+  body {
+    width: 100%;
+  }
+  header {
+    display: inline-block;
+    height: 40rem;
+    width: 100%;
+  }
+  main {
+    height: 80rem;
+    flex-direction: column;
+    width: 100%;
+  }
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 70%;
+    padding-left: 2rem;
+  }
+
+  h1 {
+    width: 90%;
+    top: 56%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .again {
+    top: 2rem;
+    left: 33%;
+  }
+  .between {
+    top: 10rem;
+    right: 22%;
+  }
+}
+
+@media (min-width: 411px) and (max-width: 499px) {
+  html {
+    font-size: 50%;
+    width: auto;
+  }
+  body {
+    width: 100%;
+  }
+  header {
+    display: inline-block;
+    height: 40rem;
+    width: 100%;
+  }
+  main {
+    height: 80rem;
+    flex-direction: column;
+    width: 100%;
+  }
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 70%;
+    padding-left: 2rem;
+  }
+
+  h1 {
+    width: 90%;
+    top: 56%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .again {
+    top: 2rem;
+    left: 18rem;
+  }
+  .between {
+    top: 10rem;
+    right: 12rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 650px) {
+  html {
+    font-size: 50%;
+    width: auto;
+  }
+  body {
+    width: 100%;
+  }
+  header {
+    display: inline-block;
+    height: 40rem;
+    width: 100%;
+  }
+  main {
+    height: 80rem;
+    flex-direction: column;
+    width: 100%;
+  }
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 70%;
+    padding-left: 2rem;
+  }
+
+  h1 {
+    width: 90%;
+    top: 56%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .again {
+    top: 2rem;
+    left: 25rem;
+  }
+  .between {
+    top: 10rem;
+    right: 21rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1025px) {
+  header {
+    height: 30rem;
+  }
+  main {
+    height: 60rem;
+  }
+}
